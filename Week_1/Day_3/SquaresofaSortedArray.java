@@ -1,6 +1,13 @@
 class Solution {
     public int[] sortedSquares(int[] nums) {
 
+        // for(int i=0 ; i<nums.length ; i++){
+        // nums[i] = nums[i]*nums[i];
+        // }
+        // Arrays.sort(nums);
+        // return nums;
+
+        // Two pointer , optimal solution
         int[] result = new int[nums.length];
         int left = 0;
         int right = nums.length - 1;
