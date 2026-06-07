@@ -24,6 +24,7 @@ class Solution {
         // }
         //
 
+        // for odd matrix minus the middle element as it is added twice
         if (m % 2 == 1) {
             sum -= mat[m / 2][m / 2];
         }
