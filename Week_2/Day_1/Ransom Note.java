@@ -16,7 +16,7 @@ class Solution {
 
         // return true;
 
-        // // HashArray for better time complexity
+        // // HashArray for better space complexity
 
         int[] freq = new int[26];
 
