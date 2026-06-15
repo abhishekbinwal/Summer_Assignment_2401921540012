@@ -1,7 +1,8 @@
 class Solution {
     public boolean repeatedSubstringPattern(String s) {
 
-        // // brute ,
+        // // brute...
+
         // int n = s.length();
         // for (int len = 1; len <= n / 2; len++) {
         // if (n % len == 0) {
@@ -18,3 +19,5 @@ class Solution {
         return doubled.substring(1, doubled.length() - 1).contains(s);
     }
 }
+
+// by KMP Algorithm , optimal solution
