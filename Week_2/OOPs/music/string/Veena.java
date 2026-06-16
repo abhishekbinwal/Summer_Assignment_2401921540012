@@ -1,6 +1,6 @@
-package music.string;
+package Week_2.OOPs.music.string;
 
-import music.Playable;
+import Week_2.OOPs.music.Playable;
 
 public class Veena implements Playable {
 

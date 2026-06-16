@@ -1,6 +1,6 @@
-package music.wind;
+package Week_2.OOPs.music.wind;
 
-import music.Playable;
+import Week_2.OOPs.music.Playable;
 
 public class Saxophone implements Playable {
 
