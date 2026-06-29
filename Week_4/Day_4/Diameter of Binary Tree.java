@@ -1,7 +1,18 @@
-package Week_4.Day_4;
+class Solution {
+    private int diameter = 0;
 
-public class Diameter
-of Binary Tree
-{
-    
+    public int diameterOfBinaryTree(TreeNode root) {
+        depth(root);
+        return diameter;
+    }
+
+    private int depth(TreeNode node) {
+        if (node == null)
+            return 0;
+
+        int left = depth(node.left);
+        int right = depth(node.right);
+        diameter = Math.max(diameter, left + right);
+        return Math.max(left, right) + 1;
+    }
 }
