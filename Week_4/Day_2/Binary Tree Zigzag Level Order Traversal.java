@@ -28,7 +28,7 @@ class Solution {
             }
 
             result.add(level);
-            leftToRight = !leftToRight; // flip direction
+            leftToRight = !leftToRight;
         }
 
         return result;

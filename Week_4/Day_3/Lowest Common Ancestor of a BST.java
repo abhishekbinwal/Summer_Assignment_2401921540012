@@ -1,8 +1,14 @@
-package Week_4.Day_3;
-
-public class Lowest
-Common Ancestor
-of a BST
-{
-    
+class Solution {
+    public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
+        while (root != null) {
+            if (p.val < root.val && q.val < root.val) {
+                root = root.left; // both nodes lie in left subtree
+            } else if (p.val > root.val && q.val > root.val) {
+                root = root.right; // both nodes lie in right subtree
+            } else {
+                return root; // split point → LCA
+            }
+        }
+        return null;
+    }
 }

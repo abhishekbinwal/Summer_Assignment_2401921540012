@@ -1,8 +1,14 @@
-package Week_4.Day_3;
-
-public class Search
-in a
-Binary Search Tree
-{
-    
+class Solution {
+    public TreeNode searchBST(TreeNode root, int val) {
+        while (root != null) {
+            if (val < root.val) {
+                root = root.left;
+            } else if (val > root.val) {
+                root = root.right;
+            } else {
+                return root; // found the node
+            }
+        }
+        return null; // not found
+    }
 }
